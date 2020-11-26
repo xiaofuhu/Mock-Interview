@@ -14,6 +14,7 @@ Explanation:
 String "AGXGTXAYB" has both string 
 "AGGTAB" and "GXTXAYB" as subsequences.
 '''
+import time
 
 def solution(str1, str2):
     return(-1)
@@ -41,6 +42,6 @@ if __name__ == "__main__":
             error(ans, t[2])
         else:
             correct += 1
-            print("\tPASSED")
+            print("\tPASSED\tTook {:.4f} ms".format(duration))
         current += 1
     print("\n{} of {} correct\n".format(correct, len(test_cases)))
